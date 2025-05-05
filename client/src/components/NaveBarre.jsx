@@ -38,8 +38,8 @@ const NaveBarre =()=>{
              </>):
              (
               <>
-               <Nav.Link href="#about" className="text-white">About Us</Nav.Link>
-               <Nav.Link href="#contact" className="text-white">Contact Us</Nav.Link>
+               <Nav.Link href="/about" className="text-white">About Us</Nav.Link>
+               <Nav.Link href="/contact" className="text-white">Contact Us</Nav.Link>
                <Button href="/login" variant="light" className="px-3">
               Login
             </Button>

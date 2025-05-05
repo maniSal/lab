@@ -13,6 +13,9 @@ import { current } from './JS/actions/authAction';
 import { useDispatch, useSelector } from 'react-redux';
 import Dashboard from './pages/Dashboard';
 import AddCour from './components/AddCour';
+import About from './pages/About';
+import ContactUs from './pages/Contact';
+import Footer from './components/Footer';
 
 
 
@@ -51,6 +54,10 @@ function App() {
           <>
             <Route path="/register" element={<Register />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/about" element={<About />} 
+            />
+            <Route path="/contact" element={<ContactUs />} 
+            />
           </>
         )}
 
@@ -79,6 +86,7 @@ function App() {
        
         <Route path="/*" element={<Error />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
